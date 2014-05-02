@@ -270,7 +270,8 @@ static const NSCalendarUnit PMEPickerViewComponents = NSCalendarUnitDay | NSCale
     UILabel* label = (UILabel*)view;
     if (!label) {
         label = [UILabel new];
-        label.font = [UIFont systemFontOfSize:20.];
+        label.font = self.textFont ? self.textFont : [UIFont systemFontOfSize:20.];
+        label.textColor = self.textColor ? self.textColor : [UIColor blackColor];
         label.textAlignment = NSTextAlignmentCenter;
     }
     label.text = [self pickerView:pickerView titleForRow:row forComponent:component];

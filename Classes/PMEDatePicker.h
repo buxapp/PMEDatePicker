@@ -24,6 +24,9 @@
 //! Use this delegate instead of inherited delegate and dataSource properties
 @property (nonatomic, weak) IBOutlet id<PMEDatePickerDelegate> dateDelegate;
 
+@property (nonatomic, strong) UIFont *textFont;
+@property (nonatomic, strong) UIColor *textColor;
+
 - (void)setDate:(NSDate*)date animated:(BOOL)animated;
 
 @end
