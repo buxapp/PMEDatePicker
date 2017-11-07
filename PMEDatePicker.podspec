@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "PMEDatePicker"
-  s.version      = "0.0.1.1"
-  s.summary      = "BUX fork of PMEDatePicker."
+  s.version      = "0.0.2"
+  s.summary      = "DatePicker with configurable date components"
 
   s.description  = <<-DESC
                    * compared to UIDatePicker you decide if you want to display day, month, year, hour, minute and am/pm in any combination
